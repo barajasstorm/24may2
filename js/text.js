@@ -1,11 +1,17 @@
 $(document).ready(init);
 
 function init() {
-	$("p").click(changeText);
+	$("h1").click(changeLink);
 }
 
-function changeText() {
+function changeLink() {
 	//$(this).text("This is the new text for Paragraph!");
-	$("h1").text("This is the new title!");
-	console.log($("h1").text());
+	//$("a").attr("href", "http://www.google.es");
+	
+	// Remove Attr
+	$("h1").removeAttr("class")
+	console.log($("h1").attr("href"));
+
+	//$("h1").text("This is the new title!");
+	
 }
